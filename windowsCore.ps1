@@ -1,1 +1,3 @@
-Start-Process -FilePath "C:\Windows\System32\winget.exe" -ArgumentList "upgrade --all" -Verb RunAs -Wait
+# PowerShell script to run winget upgrade --all
+Start-Process -FilePath "winget" -ArgumentList "upgrade --all" -Verb RunAs -Wait
+
