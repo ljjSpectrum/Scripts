@@ -1,1 +1,1 @@
-winget upgrade --all
+winget upgrade --id Yubico.Authenticator
