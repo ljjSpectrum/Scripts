@@ -18,17 +18,9 @@ Invoke-WebRequest -Uri $downloadUrl -OutFile $installerPath
 # Verify the SHA256 hash
 if (Test-Path $installerPath) 
 {
-#    Write-Host "Download complete. Verifying SHA256 hash..."
-#    $actualHash = (Get-FileHash -Path $installerPath -Algorithm SHA256).Hash.ToLower()
-#    if ($actualHash -eq $expectedHash) {
-#        Write-Host "Hash verified successfully. Starting silent installation..."
-
         Start-Process $installerPath -ArgumentList "/install", "/quiet", "/norestart" -Wait
         Write-Host "ASP.NET Core Runtime installation complete."
-        
- #   } else {
- #       Write-Error "File hash mismatch! Expected $expectedHash but got $actualHash. Installation aborted."
- #  }
+
 } else {
     Write-Error "Download failed. File not found at expected location: $installerPath"
 }
