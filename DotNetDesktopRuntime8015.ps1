@@ -1,8 +1,8 @@
 # Define variables
 $directoryPath = "C:\Temp"
 $installerPath = "$directoryPath\windowsdesktop-runtime-8.0.15-win-x64.exe"
-$downloadUrl = "https://download.visualstudio.microsoft.com/download/pr/5946b535-19ab-4429-b0d1-82e2d0b5cbd4/34b97f657fa86c35478d29ed38500846/windowsdesktop-runtime-8.0.15-win-x64.exe"
-$expectedHash = "44AE30E2F3C8C45DF28936A26D7D160E62B6315A0112B96C9BE2E4D7F15E482E".ToLower()
+$downloadUrl = "https://aka.ms/dotnet/aspnetcore-runtime-8.0.15-win-x64.exe"
+
 
 # Ensure directory exists
 if (-not (Test-Path $directoryPath)) {
