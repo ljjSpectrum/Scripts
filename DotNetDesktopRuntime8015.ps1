@@ -17,7 +17,7 @@ curl.exe -L -A "Mozilla/5.0 (Windows NT 10.0; Win64; x64)" `
 
 # Check if the file exists
 if (Test-Path $installerPath) {
-    Write-Host "Download complete. Verifying SHA256 hash..."
+  #  Write-Host "Download complete. Verifying SHA256 hash..."
 
   #  $actualHash = (Get-FileHash -Path $installerPath -Algorithm SHA256).Hash.ToLower()
 
