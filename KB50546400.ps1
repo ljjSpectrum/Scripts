@@ -14,7 +14,7 @@ if (-not (Test-Path $localDir))
 Invoke-WebRequest -Uri $updateUrl -OutFile $localPath
 
 # Install the update
-Start-Process "dism.exe" -ArgumentList "/Online", "/Add-Package", "/PackagePath:$localPath", "/Quiet", "/NoRestart" -Wait
+Start-Process "dism.exe" -ArgumentList "/Online", "/Add-Package", "/PackagePath=$localPath", "/Quiet", "/NoRestart" -Wait
 
 # Optionally clean up
 Remove-Item $localPath -Force
