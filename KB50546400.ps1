@@ -1,6 +1,6 @@
 # Set URL or network path to the .cab file
-$updateUrl = "https://github.com/ljjSpectrum/Scripts/blob/main/windows10.0-kb5059607-x64_e3d41d6b69501d1851fb1afd6562859151f539af.cab"
-
+#$updateUrl = "https://github.com/ljjSpectrum/Scripts/blob/main/windows10.0-kb5059607-x64_e3d41d6b69501d1851fb1afd6562859151f539af.cab"
+$updateUrl = "https://limewire.com/d/RTuwE#H1JdcJp953/windows10.0-kb5059607-x64_e3d41d6b69501d1851fb1afd6562859151f539af.cab"
 $localPath = "C:\TEMP2\KB5046400.cab"
 $localDir = "C:\TEMP2"
 
