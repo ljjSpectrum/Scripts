@@ -1,11 +1,12 @@
 # Set URL or network path to the .cab file
 $updateUrl = "https://github.com/ljjSpectrum/Scripts/blob/main/windows10.0-kb5059607-x64_e3d41d6b69501d1851fb1afd6562859151f539af.cab"
 $localPath = "C:\TEMP\KB5046400.cab"
+$localDir = "C:\TEMP
 
 # Ensure the directory exists
-if (-not (Test-Path $localPath)) 
+if (-not (Test-Path $localDir)) 
 {
-    New-Item -ItemType Directory -Path $localPath | Out-Null
+    New-Item -ItemType Directory -Path $localDir | Out-Null
 }
 
 # Download the file
